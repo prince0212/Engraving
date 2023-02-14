@@ -1,0 +1,21 @@
+<?php
+/**
+ * @var $block Magento\Catalog\Block\Product\View
+ */
+?>
+<?php
+$product = $block->getProduct();
+$productTypeInstance = $product->getTypeInstance();
+?>
+<div>
+    <!-- <input type="checkbox" id="engraving_checkbox" onclick="openBox()"> -->
+    <textarea id="engraving_text" placeholder="Input your text" name="engraving_text"></textarea>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "engraving": {}
+        }
+    } 
+</script>

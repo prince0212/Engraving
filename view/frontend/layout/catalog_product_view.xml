@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.form.content">
+            <block class="Magento\Catalog\Block\Product\View" name="product_engraving" template="Valtech_Engraving::engraving.phtml" before="product.info.addtocart" ifconfig="valtech_engraving/general/enable" />
+        </referenceContainer>
+    </body>
+</page>
